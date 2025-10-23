@@ -1,3 +1,10 @@
+function slugify(title) {
+  const normaLaizer = title.toLowerCase();
+  const text = normaLaizer.split(" ");
+  const slug = text.join("-");
+  return slug;
+}
+
 console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
 console.log(slugify("English for developer")); // "english-for-developer"
 console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
